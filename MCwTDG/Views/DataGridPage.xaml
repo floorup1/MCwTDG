@@ -8,7 +8,7 @@
     xmlns:controls="using:Microsoft.Toolkit.Uwp.UI.Controls"
     xmlns:model="using:MCwTDG.Models"
     mc:Ignorable="d">
-    <Grid 
+    <Grid        
         x:Name="ContentArea" 
         Margin="{StaticResource MediumLeftRightMargin}">
         <Grid Background="{ThemeResource SystemControlPageBackgroundChromeLowBrush}">
@@ -18,9 +18,9 @@
                     <!--TODO WTS:
                     Remove this column definitions and define columns for your data.
                     Consider adding header properties to Resources.resw-->
-                    <controls:DataGridTextColumn Header="№" Binding="{Binding OrderId}" />
-                    <controls:DataGridTextColumn Header="Услуга" Binding="{Binding Company}" Width="0,5*" />
-                    <controls:DataGridTextColumn Header="Орган власти" Binding="{Binding ShipTo}" Width="0,5*" />
+                    <controls:DataGridTextColumn Header="№" Binding="{Binding ServID}" />
+                    <controls:DataGridTextColumn Header="Услуга" Binding="{Binding ServName}" Width="0,5*" />
+                    <controls:DataGridTextColumn Header="Орган власти" Binding="{Binding ServOGV}" Width="0,5*" />
                 </controls:DataGrid.Columns>
                 <controls:DataGrid.RowDetailsTemplate>
                     <DataTemplate>
@@ -28,7 +28,7 @@
                             <StackPanel Orientation="Vertical" >
                                 <StackPanel Orientation="Horizontal">
                                     <TextBlock FontSize="16" Text="Срок предоставления - " Margin="0,0,4,0" VerticalAlignment="Center" />
-                                    <TextBlock FontSize="16" Text="{Binding ShipTo}" VerticalAlignment="Center" />
+                                    <TextBlock FontSize="16" Text="{Binding ServTime}" VerticalAlignment="Center" />
                                 </StackPanel>
                             </StackPanel>
                         </Border>
