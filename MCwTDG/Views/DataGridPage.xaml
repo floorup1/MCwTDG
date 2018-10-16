@@ -1,0 +1,40 @@
+﻿<Page
+    x:Class="MCwTDG.Views.DataGridPage"
+    xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+    xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+    xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+    xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+    Style="{StaticResource PageStyle}"
+    xmlns:controls="using:Microsoft.Toolkit.Uwp.UI.Controls"
+    xmlns:model="using:MCwTDG.Models"
+    mc:Ignorable="d">
+    <Grid 
+        x:Name="ContentArea" 
+        Margin="{StaticResource MediumLeftRightMargin}">
+        <Grid Background="{ThemeResource SystemControlPageBackgroundChromeLowBrush}">
+            <Image Source="/Assets/Images/background03.png" Stretch="UniformToFill"/>
+            <controls:DataGrid ItemsSource="{x:Bind Source}" AutoGenerateColumns="False" IsReadOnly="True" CanUserResizeColumns="False" CanUserReorderColumns="False" >
+                <controls:DataGrid.Columns>
+                    <!--TODO WTS:
+                    Remove this column definitions and define columns for your data.
+                    Consider adding header properties to Resources.resw-->
+                    <controls:DataGridTextColumn Header="№" Binding="{Binding OrderId}" />
+                    <controls:DataGridTextColumn Header="Услуга" Binding="{Binding Company}" Width="0,5*" />
+                    <controls:DataGridTextColumn Header="Орган власти" Binding="{Binding ShipTo}" Width="0,5*" />
+                </controls:DataGrid.Columns>
+                <controls:DataGrid.RowDetailsTemplate>
+                    <DataTemplate>
+                        <Border BorderThickness="0" Padding="10">
+                            <StackPanel Orientation="Vertical" >
+                                <StackPanel Orientation="Horizontal">
+                                    <TextBlock FontSize="16" Text="Срок предоставления - " Margin="0,0,4,0" VerticalAlignment="Center" />
+                                    <TextBlock FontSize="16" Text="{Binding ShipTo}" VerticalAlignment="Center" />
+                                </StackPanel>
+                            </StackPanel>
+                        </Border>
+                    </DataTemplate>
+                </controls:DataGrid.RowDetailsTemplate>
+            </controls:DataGrid>
+        </Grid>
+    </Grid>
+</Page>
