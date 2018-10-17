@@ -137,4 +137,8 @@
     <value>Список услуг</value>
     <comment>Pivot item header for DataGrid</comment>
   </data>
+  <data name="PivotItem_Blank.Header" xml:space="preserve">
+    <value>Blank</value>
+    <comment>Pivot item header for Blank</comment>
+  </data>
 </root>

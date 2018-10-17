@@ -27,6 +27,11 @@
                     <views:DataGridPage/>
                 </Frame>
             </PivotItem>
+            <PivotItem x:Uid="PivotItem_Blank">
+                <Frame>
+                    <views:BlankPage/>
+                </Frame>
+            </PivotItem>
         </Pivot>
     </Grid>
 </Page>
