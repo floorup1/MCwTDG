@@ -15,12 +15,9 @@
             <Image Source="/Assets/Images/background03.png" Stretch="UniformToFill"/>
             <controls:DataGrid ItemsSource="{x:Bind Source}" AutoGenerateColumns="False" IsReadOnly="True" CanUserResizeColumns="False" CanUserReorderColumns="False" >
                 <controls:DataGrid.Columns>
-                    <!--TODO WTS:
-                    Remove this column definitions and define columns for your data.
-                    Consider adding header properties to Resources.resw-->
-                    <controls:DataGridTextColumn Header="№" Binding="{Binding ServID}" />
-                    <controls:DataGridTextColumn Header="Услуга" Binding="{Binding ServName}" Width="0,5*" />
-                    <controls:DataGridTextColumn Header="Орган власти" Binding="{Binding ServOGV}" Width="0,5*" />
+                    <controls:DataGridTextColumn Header="№" Binding="{Binding ServID}" ElementStyle="{StaticResource CellTextStyle}"/>
+                    <controls:DataGridTextColumn Header="Услуга" Binding="{Binding ServName}" Width="0,5*" ElementStyle="{StaticResource CellTextStyle}"/>
+                    <controls:DataGridTextColumn Header="Орган власти" Binding="{Binding ServOGV}" Width="0,5*" ElementStyle="{StaticResource CellTextStyle}"/>
                 </controls:DataGrid.Columns>
                 <controls:DataGrid.RowDetailsTemplate>
                     <DataTemplate>
