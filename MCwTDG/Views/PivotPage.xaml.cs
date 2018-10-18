@@ -22,5 +22,7 @@ namespace MCwTDG.Views
             base.OnNavigatedTo(e);
             await Task.CompletedTask;
         }
+
+
     }
 }

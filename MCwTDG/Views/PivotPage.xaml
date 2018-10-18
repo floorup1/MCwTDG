@@ -21,7 +21,7 @@
                     <views:MainPage/>
                 </Frame>
             </PivotItem>
-            
+
             <PivotItem x:Uid="PivotItem_DataGrid">
                 <Frame>
                     <views:DataGridPage/>
@@ -32,6 +32,7 @@
                     <views:BlankPage/>
                 </Frame>
             </PivotItem>
+
             
         </Pivot>
     </Grid>
