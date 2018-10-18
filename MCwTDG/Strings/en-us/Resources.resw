@@ -149,4 +149,12 @@
     <value>Информация</value>
     <comment>Pivot item header for MasterDetail1</comment>
   </data>
+  <data name="MasterDetail02_NoSelection.Text" xml:space="preserve">
+    <value>Select an item from the list.</value>
+    <comment>No selection text for MasterDetail02</comment>
+  </data>
+  <data name="PivotItem_MasterDetail02.Header" xml:space="preserve">
+    <value>Возмещение вреда</value>
+    <comment>Pivot item header for MasterDetail02</comment>
+  </data>
 </root>

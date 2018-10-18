@@ -33,6 +33,11 @@
                     <views:MasterDetail1Page/>
                 </Frame>
             </PivotItem>
+            <PivotItem x:Uid="PivotItem_MasterDetail02">
+                <Frame>
+                    <views:MasterDetail02Page/>
+                </Frame>
+            </PivotItem>
         </Pivot>
     </Grid>
 </Page>

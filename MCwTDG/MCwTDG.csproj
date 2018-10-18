@@ -126,12 +126,14 @@
     <Compile Include="Helpers\IPivotPage.cs" />
     <Compile Include="Helpers\PivotItemExtensions.cs" />
     <Compile Include="Models\Information.cs" />
+    <Compile Include="Models\SampleOrder.cs" />
     <Compile Include="Models\ServOrder.cs" />
     <Compile Include="Services\ActivationService.cs" />
     <Compile Include="Activation\DefaultLaunchActivationHandler.cs" />
     <Compile Include="Services\InfoService.cs" />
     <Compile Include="Services\LocationService.cs" />
     <Compile Include="Services\NavigationService.cs" />
+    <Compile Include="Services\SampleDataService.cs" />
     <Compile Include="Services\ServDataService.cs" />
     <Compile Include="Views\BlankPage.xaml.cs">
       <DependentUpon>BlankPage.xaml</DependentUpon>
@@ -141,6 +143,12 @@
     </Compile>
     <Compile Include="Views\MainPage.xaml.cs">
       <DependentUpon>MainPage.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="Views\MasterDetail02DetailControl.xaml.cs">
+      <DependentUpon>MasterDetail02DetailControl.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="Views\MasterDetail02Page.xaml.cs">
+      <DependentUpon>MasterDetail02Page.xaml</DependentUpon>
     </Compile>
     <Compile Include="Views\MasterDetail1DetailControl.xaml.cs">
       <DependentUpon>MasterDetail1DetailControl.xaml</DependentUpon>
@@ -188,6 +196,14 @@
       <SubType>Designer</SubType>
     </Page>
     <Page Include="Views\MainPage.xaml">
+      <Generator>MSBuild:Compile</Generator>
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Include="Views\MasterDetail02DetailControl.xaml">
+      <Generator>MSBuild:Compile</Generator>
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Include="Views\MasterDetail02Page.xaml">
       <Generator>MSBuild:Compile</Generator>
       <SubType>Designer</SubType>
     </Page>

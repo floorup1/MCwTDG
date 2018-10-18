@@ -16,24 +16,23 @@
             <controls:DataGrid ItemsSource="{x:Bind Source}" AutoGenerateColumns="False" IsReadOnly="True" CanUserResizeColumns="False" CanUserReorderColumns="False" >
                 <controls:DataGrid.Columns>
                     <controls:DataGridTextColumn Header="№" Binding="{Binding ServID}" ElementStyle="{StaticResource CellTextStyle}"/>
-                    <controls:DataGridTextColumn Header="Услуга" Binding="{Binding ServName}" Width="0,5*" ElementStyle="{StaticResource CellTextStyle}"/>
-                    <controls:DataGridTextColumn Header="Орган власти" Binding="{Binding ServOGV}" Width="0,5*" ElementStyle="{StaticResource CellTextStyle}"/>
+                    <controls:DataGridTextColumn Header="Услуга" Binding="{Binding ServName}" Width="*" ElementStyle="{StaticResource CellTextStyle}"/>
                 </controls:DataGrid.Columns>
                 <controls:DataGrid.RowDetailsTemplate>
                     <DataTemplate>
                         <Border BorderThickness="0" Padding="10">
                             <StackPanel Orientation="Vertical" >
                                 <StackPanel Orientation="Horizontal" Style="{StaticResource SettingsFlyoutSectionStyle}">
-                                    <TextBlock FontSize="16" Text="Уровень предоставления - " Margin="0,0,4,0" VerticalAlignment="Center" />
-                                    <TextBlock FontSize="16" Text="{Binding ServLevel}" VerticalAlignment="Center" />
+                                    <TextBlock FontSize="16" Text="Уровень предоставления - " Margin="0,0,4,0" VerticalAlignment="Center" TextWrapping="Wrap" />
+                                    <TextBlock FontSize="16" Text="{Binding ServLevel}" VerticalAlignment="Center" TextWrapping="Wrap" />
                                 </StackPanel>
                                 <StackPanel Orientation="Horizontal" Style="{StaticResource SettingsFlyoutSectionStyle}">
-                                    <TextBlock FontSize="16" Text="Орган власти, предоставляющий услугу - " Margin="0,0,4,0" VerticalAlignment="Center" />
-                                    <TextBlock FontSize="16" Text="{Binding ServOGV}" VerticalAlignment="Center" />
+                                    <TextBlock FontSize="16" Text="Орган, предоставляющий услугу - " Margin="0,0,4,0" VerticalAlignment="Center" TextWrapping="Wrap"/>
+                                    <TextBlock FontSize="16" Text="{Binding ServOGV}" VerticalAlignment="Center" TextWrapping="Wrap"/>
                                 </StackPanel>
                                 <StackPanel Orientation="Horizontal" Style="{StaticResource SettingsFlyoutSectionStyle}">
-                                    <TextBlock FontSize="16" Text="Срок предоставления - " Margin="0,0,4,0" VerticalAlignment="Center" />
-                                    <TextBlock FontSize="16" Text="{Binding ServTime}" VerticalAlignment="Center" />
+                                    <TextBlock FontSize="16" Text="Срок предоставления - " Margin="0,0,4,0" VerticalAlignment="Center" TextWrapping="Wrap"/>
+                                    <TextBlock FontSize="16" Text="{Binding ServTime}" VerticalAlignment="Center" TextWrapping="Wrap"/>
                                 </StackPanel>
                             </StackPanel>
                         </Border>
