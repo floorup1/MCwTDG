@@ -26,12 +26,16 @@
                                 <StackPanel Orientation="Horizontal" Style="{StaticResource SettingsFlyoutSectionStyle}">
                                     <TextBlock FontSize="16" Text="Уровень предоставления - " Margin="0,0,4,0" VerticalAlignment="Center" />
                                     <TextBlock FontSize="16" Text="{Binding ServLevel}" VerticalAlignment="Center" />
-                                    </StackPanel>
+                                </StackPanel>
+                                <StackPanel Orientation="Horizontal" Style="{StaticResource SettingsFlyoutSectionStyle}">
+                                    <TextBlock FontSize="16" Text="Орган власти, предоставляющий услугу - " Margin="0,0,4,0" VerticalAlignment="Center" />
+                                    <TextBlock FontSize="16" Text="{Binding ServOGV}" VerticalAlignment="Center" />
+                                </StackPanel>
                                 <StackPanel Orientation="Horizontal" Style="{StaticResource SettingsFlyoutSectionStyle}">
                                     <TextBlock FontSize="16" Text="Срок предоставления - " Margin="0,0,4,0" VerticalAlignment="Center" />
                                     <TextBlock FontSize="16" Text="{Binding ServTime}" VerticalAlignment="Center" />
                                 </StackPanel>
-                                </StackPanel>
+                            </StackPanel>
                         </Border>
                     </DataTemplate>
                 </controls:DataGrid.RowDetailsTemplate>
