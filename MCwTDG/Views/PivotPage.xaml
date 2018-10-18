@@ -27,13 +27,12 @@
                     <views:DataGridPage/>
                 </Frame>
             </PivotItem>
-            <PivotItem x:Uid="PivotItem_Blank">
+                        
+            <PivotItem x:Uid="PivotItem_MasterDetail1">
                 <Frame>
-                    <views:BlankPage/>
+                    <views:MasterDetail1Page/>
                 </Frame>
             </PivotItem>
-
-            
         </Pivot>
     </Grid>
 </Page>

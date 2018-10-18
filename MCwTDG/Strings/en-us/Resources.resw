@@ -118,7 +118,7 @@
     <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </resheader>
   <data name="AppDisplayName" xml:space="preserve">
-    <value>MCwTDG</value>
+    <value>Информационный киоск</value>
     <comment>Application display name</comment>
   </data>
   <data name="AppDescription" xml:space="preserve">
@@ -129,10 +129,6 @@
     <value>Приветствие</value>
     <comment>Pivot item header for Main</comment>
   </data>
-  <data name="PivotItem_TelerikDataGrid.Header" xml:space="preserve">
-    <value>TelerikDataGrid</value>
-    <comment>Pivot item header for TelerikDataGrid</comment>
-  </data>
   <data name="PivotItem_DataGrid.Header" xml:space="preserve">
     <value>Список услуг</value>
     <comment>Pivot item header for DataGrid</comment>
@@ -141,72 +137,16 @@
     <value>Blank</value>
     <comment>Pivot item header for Blank</comment>
   </data>
-  <data name="Map_YourLocation" xml:space="preserve">
-    <value>Your location</value>
-    <comment>Your location text on map page</comment>
-  </data>
   <data name="ExceptionLocationServiceStartListeningCanNotBeCalled" xml:space="preserve">
     <value>The StartListening method cannot be called before the InitializeAsync method.</value>
     <comment>Start listening cannot be called before the initialize in location service</comment>
   </data>
-  <data name="PivotItem_Map.Header" xml:space="preserve">
-    <value>Map</value>
-    <comment>Pivot item header for Map</comment>
+  <data name="MasterDetail1_NoSelection.Text" xml:space="preserve">
+    <value>Необходимо выбрать интересующий Вас раздел</value>
+    <comment>No selection text for MasterDetail1</comment>
   </data>
-  <data name="WebViewZagr_FailedMessage.Text" xml:space="preserve">
-    <value>Page failed to load. Check connection and retry.</value>
-    <comment>Load failure message for WebViewZagr</comment>
-  </data>
-  <data name="WebViewZagr_Loading.Text" xml:space="preserve">
-    <value>Загрузка...</value>
-    <comment>Loading message for WebViewZagr</comment>
-  </data>
-  <data name="WebViewZagr_Retry.Content" xml:space="preserve">
-    <value>retry</value>
-    <comment>Retry button for WebViewZagr</comment>
-  </data>
-  <data name="WebViewZagr_BrowserBackButton.[using:Windows.UI.Xaml.Automation]AutomationProperties.Name" xml:space="preserve">
-    <value>Back</value>
-    <comment>WebView back button automation name property for WebViewZagr</comment>
-  </data>
-  <data name="WebViewZagr_BrowserBackButton.[using:Windows.UI.Xaml.Controls]ToolTipService.ToolTip" xml:space="preserve">
-    <value>Back</value>
-    <comment>Back button automation tooltip property for WebViewZagr</comment>
-  </data>
-  <data name="WebViewZagr_BrowserForwardButton.[using:Windows.UI.Xaml.Automation]AutomationProperties.Name" xml:space="preserve">
-    <value>Forward</value>
-    <comment>Forward button automation name property for WebViewZagr</comment>
-  </data>
-  <data name="WebViewZagr_BrowserForwardButton.[using:Windows.UI.Xaml.Controls]ToolTipService.ToolTip" xml:space="preserve">
-    <value>Forward</value>
-    <comment>Forward button automation tooltip property for WebViewZagr</comment>
-  </data>
-  <data name="WebViewZagr_RefreshBrowserButton.[using:Windows.UI.Xaml.Automation]AutomationProperties.Name" xml:space="preserve">
-    <value>Refresh</value>
-    <comment>Refresh button automation name property for WebViewZagr</comment>
-  </data>
-  <data name="WebViewZagr_RefreshBrowserButton.[using:Windows.UI.Xaml.Controls]ToolTipService.ToolTip" xml:space="preserve">
-    <value>Refresh</value>
-    <comment>Refresh button automation tooltip property for WebViewZagr</comment>
-  </data>
-  <data name="WebViewZagr_OpenInBrowserButton.[using:Windows.UI.Xaml.Automation]AutomationProperties.Name" xml:space="preserve">
-    <value>Open in browser</value>
-    <comment>Open in browser button automation name property for WebViewZagr</comment>
-  </data>
-  <data name="WebViewZagr_OpenInBrowserButton.[using:Windows.UI.Xaml.Controls]ToolTipService.ToolTip" xml:space="preserve">
-    <value>Open in browser</value>
-    <comment>Open in browser button automation tooltip property for WebViewZagr</comment>
-  </data>
-  <data name="PivotItem_WebViewZagr.Header" xml:space="preserve">
-    <value>Загруженность центров</value>
-    <comment>Pivot item header for WebViewZagr</comment>
-  </data>
-  <data name="MasterDetail_NoSelection.Text" xml:space="preserve">
-    <value>Select an item from the list.</value>
-    <comment>No selection text for MasterDetail</comment>
-  </data>
-  <data name="PivotItem_MasterDetail.Header" xml:space="preserve">
-    <value>MasterDetail</value>
-    <comment>Pivot item header for MasterDetail</comment>
+  <data name="PivotItem_MasterDetail1.Header" xml:space="preserve">
+    <value>Информация</value>
+    <comment>Pivot item header for MasterDetail1</comment>
   </data>
 </root>
