@@ -20,7 +20,7 @@
                 </controls:DataGrid.Columns>
                 <controls:DataGrid.RowDetailsTemplate>
                     <DataTemplate>
-                        <Border BorderThickness="0" Padding="10">
+                        <Border BorderThickness="0" Padding="0">
                             <StackPanel Orientation="Vertical" >
                                 <StackPanel Orientation="Horizontal" Style="{StaticResource SettingsFlyoutSectionStyle}">
                                     <TextBlock FontSize="16" Text="Уровень предоставления - " Margin="0,0,4,0" VerticalAlignment="Center" TextWrapping="Wrap" />

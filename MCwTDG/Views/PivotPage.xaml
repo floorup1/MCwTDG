@@ -27,17 +27,19 @@
                     <views:DataGridPage/>
                 </Frame>
             </PivotItem>
-                        
-            <PivotItem x:Uid="PivotItem_MasterDetail1">
+                              
+            <PivotItem x:Uid="PivotItem_Blank">
                 <Frame>
-                    <views:MasterDetail1Page/>
+                    <views:BlankPage/>
                 </Frame>
             </PivotItem>
-            <PivotItem x:Uid="PivotItem_MasterDetail02">
+            
+            <PivotItem x:Uid="PivotItem_Blank2">
                 <Frame>
-                    <views:MasterDetail02Page/>
+                    <views:Blank2Page/>
                 </Frame>
             </PivotItem>
+            
         </Pivot>
     </Grid>
 </Page>

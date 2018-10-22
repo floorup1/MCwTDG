@@ -134,27 +134,15 @@
     <comment>Pivot item header for DataGrid</comment>
   </data>
   <data name="PivotItem_Blank.Header" xml:space="preserve">
-    <value>Blank</value>
+    <value>Государственная пошлина</value>
     <comment>Pivot item header for Blank</comment>
   </data>
   <data name="ExceptionLocationServiceStartListeningCanNotBeCalled" xml:space="preserve">
     <value>The StartListening method cannot be called before the InitializeAsync method.</value>
     <comment>Start listening cannot be called before the initialize in location service</comment>
   </data>
-  <data name="MasterDetail1_NoSelection.Text" xml:space="preserve">
-    <value>Необходимо выбрать интересующий Вас раздел</value>
-    <comment>No selection text for MasterDetail1</comment>
-  </data>
-  <data name="PivotItem_MasterDetail1.Header" xml:space="preserve">
-    <value>Информация</value>
-    <comment>Pivot item header for MasterDetail1</comment>
-  </data>
-  <data name="MasterDetail02_NoSelection.Text" xml:space="preserve">
-    <value>Select an item from the list.</value>
-    <comment>No selection text for MasterDetail02</comment>
-  </data>
-  <data name="PivotItem_MasterDetail02.Header" xml:space="preserve">
+  <data name="PivotItem_Blank2.Header" xml:space="preserve">
     <value>Возмещение вреда</value>
-    <comment>Pivot item header for MasterDetail02</comment>
+    <comment>Pivot item header for Blank2</comment>
   </data>
 </root>

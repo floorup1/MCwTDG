@@ -25,7 +25,8 @@
     <AppxBundlePlatforms>x86|x64|arm</AppxBundlePlatforms>
     <AppInstallerUpdateFrequency>1</AppInstallerUpdateFrequency>
     <AppInstallerCheckForUpdateFrequency>OnApplicationRun</AppInstallerCheckForUpdateFrequency>
-    <AppInstallerUri></AppInstallerUri>
+    <AppInstallerUri>
+    </AppInstallerUri>
   </PropertyGroup>
   <PropertyGroup Condition="'$(Configuration)|$(Platform)' == 'Debug|x86'">
     <DebugSymbols>true</DebugSymbols>
@@ -131,6 +132,9 @@
     <Compile Include="Services\NavigationService.cs" />
     <Compile Include="Services\SampleDataService.cs" />
     <Compile Include="Services\ServDataService.cs" />
+    <Compile Include="Views\Blank2Page.xaml.cs">
+      <DependentUpon>Blank2Page.xaml</DependentUpon>
+    </Compile>
     <Compile Include="Views\BlankPage.xaml.cs">
       <DependentUpon>BlankPage.xaml</DependentUpon>
     </Compile>
@@ -139,18 +143,6 @@
     </Compile>
     <Compile Include="Views\MainPage.xaml.cs">
       <DependentUpon>MainPage.xaml</DependentUpon>
-    </Compile>
-    <Compile Include="Views\MasterDetail02DetailControl.xaml.cs">
-      <DependentUpon>MasterDetail02DetailControl.xaml</DependentUpon>
-    </Compile>
-    <Compile Include="Views\MasterDetail02Page.xaml.cs">
-      <DependentUpon>MasterDetail02Page.xaml</DependentUpon>
-    </Compile>
-    <Compile Include="Views\MasterDetail1DetailControl.xaml.cs">
-      <DependentUpon>MasterDetail1DetailControl.xaml</DependentUpon>
-    </Compile>
-    <Compile Include="Views\MasterDetail1Page.xaml.cs">
-      <DependentUpon>MasterDetail1Page.xaml</DependentUpon>
     </Compile>
     <Compile Include="Views\PivotPage.xaml.cs">
       <DependentUpon>PivotPage.xaml</DependentUpon>
@@ -183,6 +175,10 @@
       <SubType>Designer</SubType>
       <Generator>MSBuild:Compile</Generator>
     </Page>
+    <Page Include="Views\Blank2Page.xaml">
+      <Generator>MSBuild:Compile</Generator>
+      <SubType>Designer</SubType>
+    </Page>
     <Page Include="Views\BlankPage.xaml">
       <Generator>MSBuild:Compile</Generator>
       <SubType>Designer</SubType>
@@ -192,22 +188,6 @@
       <SubType>Designer</SubType>
     </Page>
     <Page Include="Views\MainPage.xaml">
-      <Generator>MSBuild:Compile</Generator>
-      <SubType>Designer</SubType>
-    </Page>
-    <Page Include="Views\MasterDetail02DetailControl.xaml">
-      <Generator>MSBuild:Compile</Generator>
-      <SubType>Designer</SubType>
-    </Page>
-    <Page Include="Views\MasterDetail02Page.xaml">
-      <Generator>MSBuild:Compile</Generator>
-      <SubType>Designer</SubType>
-    </Page>
-    <Page Include="Views\MasterDetail1DetailControl.xaml">
-      <Generator>MSBuild:Compile</Generator>
-      <SubType>Designer</SubType>
-    </Page>
-    <Page Include="Views\MasterDetail1Page.xaml">
       <Generator>MSBuild:Compile</Generator>
       <SubType>Designer</SubType>
     </Page>
