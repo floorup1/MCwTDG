@@ -8,10 +8,10 @@
     mc:Ignorable="d">
     <Grid
         x:Name="ContentArea"
-        Margin="{StaticResource MediumLeftRightMargin}">
+        Margin="{StaticResource MediumLeftRightMargin}" Padding="0,0,0,0" Background="{ThemeResource SystemControlPageBackgroundChromeLowBrush}" >
+        <Image Source="/Assets/Images/background03.png" Stretch="UniformToFill"/>
         <ScrollViewer>
-        <Grid Name="block" Padding="0,0,0,0" Background="{ThemeResource SystemControlPageBackgroundChromeLowBrush}" >
-            <Image Source="/Assets/Images/background03.png" Stretch="Fill" />
+        <Grid Name="block" >
             <RichTextBlock>
                 <Paragraph FontSize="24" FontWeight="Bold" TextAlignment="Center" >
                     Размеры государственной пошлины и иных платежей, уплачиваемых заявителем при получении государственных и муниципальных услуг, порядок их уплаты
