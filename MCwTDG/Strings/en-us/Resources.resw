@@ -149,4 +149,8 @@
     <value>Загруженность центров</value>
     <comment>Pivot item header for PageParseTable</comment>
   </data>
+  <data name="PivotItem_Blank3.Header" xml:space="preserve">
+    <value>Ответственность</value>
+    <comment>Pivot item header for Blank3</comment>
+  </data>
 </root>
