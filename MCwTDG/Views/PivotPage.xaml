@@ -40,6 +40,11 @@
                 </Frame>
             </PivotItem>
             
+            <PivotItem x:Uid="PivotItem_PageParseTable">
+                <Frame>
+                    <views:PageParseTablePage/>
+                </Frame>
+            </PivotItem>
         </Pivot>
     </Grid>
 </Page>

@@ -145,4 +145,8 @@
     <value>Возмещение вреда</value>
     <comment>Pivot item header for Blank2</comment>
   </data>
+  <data name="PivotItem_PageParseTable.Header" xml:space="preserve">
+    <value>Информация о загруженности центров</value>
+    <comment>Pivot item header for PageParseTable</comment>
+  </data>
 </root>
