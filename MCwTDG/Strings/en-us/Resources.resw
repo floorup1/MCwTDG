@@ -153,4 +153,8 @@
     <value>Ответственность</value>
     <comment>Pivot item header for Blank3</comment>
   </data>
+  <data name="PivotItem_Blank4.Header" xml:space="preserve">
+    <value>Порядок обжалования</value>
+    <comment>Pivot item header for Blank4</comment>
+  </data>
 </root>
