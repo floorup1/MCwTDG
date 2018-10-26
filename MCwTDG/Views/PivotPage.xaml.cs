@@ -23,6 +23,5 @@ namespace MCwTDG.Views
             await Task.CompletedTask;
         }
 
-
     }
 }
