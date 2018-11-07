@@ -23,8 +23,8 @@
                         <Border BorderThickness="0" Padding="0">
                             <StackPanel Orientation="Vertical" Margin="0,32,0,0">
                                 <StackPanel Orientation="Horizontal" Style="{StaticResource SettingsFlyoutSectionStyle}">
-                                    <TextBlock FontSize="16" Text="Орган, предоставляющий услугу - " Margin="0,0,4,0" VerticalAlignment="Center" TextWrapping="Wrap"/>
-                                    <TextBlock FontSize="16" Text="{Binding ServOGV}" VerticalAlignment="Center" TextWrapping="Wrap"/>
+                                    <TextBlock FontSize="16" Text="Орган, предоставляющий услугу - " Margin="70,0,4,0" VerticalAlignment="Center" TextWrapping="Wrap"/>
+                                    <TextBlock FontSize="16" Text="{Binding ServOGV}" VerticalAlignment="Center" TextWrapping="Wrap" />
                                 </StackPanel>
                             </StackPanel>
                         </Border>

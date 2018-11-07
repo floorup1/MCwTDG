@@ -119,42 +119,38 @@
   </resheader>
   <data name="AppDisplayName" xml:space="preserve">
     <value>Информационный киоск</value>
-    <comment>Application display name</comment>
+    <comment>Отображаемое имя приложения</comment>
   </data>
   <data name="AppDescription" xml:space="preserve">
     <value>MCwTDG</value>
-    <comment>Application description</comment>
+    <comment>Описание приложения</comment>
   </data>
   <data name="PivotItem_Main.Header" xml:space="preserve">
     <value>Приветствие</value>
-    <comment>Pivot item header for Main</comment>
+    <comment>Заголовок для mainpage</comment>
   </data>
   <data name="PivotItem_DataGrid.Header" xml:space="preserve">
     <value>Список услуг</value>
-    <comment>Pivot item header for DataGrid</comment>
+    <comment>Заголовок для datagridpage</comment>
   </data>
   <data name="PivotItem_Blank.Header" xml:space="preserve">
     <value>Государственная пошлина</value>
-    <comment>Pivot item header for Blank</comment>
-  </data>
-  <data name="ExceptionLocationServiceStartListeningCanNotBeCalled" xml:space="preserve">
-    <value>The StartListening method cannot be called before the InitializeAsync method.</value>
-    <comment>Start listening cannot be called before the initialize in location service</comment>
+    <comment>Заголовок для blankpage</comment>
   </data>
   <data name="PivotItem_Blank2.Header" xml:space="preserve">
     <value>Возмещение вреда</value>
-    <comment>Pivot item header for Blank2</comment>
+    <comment>Заголовок для blankpage2</comment>
   </data>
   <data name="PivotItem_PageParseTable.Header" xml:space="preserve">
     <value>Загруженность центров</value>
-    <comment>Pivot item header for PageParseTable</comment>
+    <comment>Заголовок для pageparsetablepage</comment>
   </data>
   <data name="PivotItem_Blank3.Header" xml:space="preserve">
     <value>Ответственность</value>
-    <comment>Pivot item header for Blank3</comment>
+    <comment>Заголовок для blankpage3</comment>
   </data>
   <data name="PivotItem_Blank4.Header" xml:space="preserve">
     <value>Порядок обжалования</value>
-    <comment>Pivot item header for Blank4</comment>
+    <comment>Заголовок для blankpage4</comment>
   </data>
 </root>
