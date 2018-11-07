@@ -12,22 +12,18 @@
         x:Name="ContentArea" 
         Margin="{StaticResource MediumLeftRightMargin}" Padding="0,0,0,0" Background="{ThemeResource SystemControlPageBackgroundChromeLowBrush}" >
         <Image Source="/Assets/Images/background03.png" Stretch="UniformToFill"/>
-        <Grid >
-            <controls:DataGrid ItemsSource="{x:Bind Source}" AutoGenerateColumns="False" IsReadOnly="True" CanUserResizeColumns="False" CanUserReorderColumns="False" >
+        <Grid>
+            <controls:DataGrid ItemsSource="{x:Bind Source}" AutoGenerateColumns="False" IsReadOnly="True" CanUserResizeColumns="False" CanUserReorderColumns="False">
                 <controls:DataGrid.Columns>
                     <controls:DataGridTextColumn Header="№" Binding="{Binding ServID}" ElementStyle="{StaticResource CellTextStyle}"/>
                     <controls:DataGridTextColumn Header="Услуга" Binding="{Binding ServName}" Width="*" ElementStyle="{StaticResource CellTextStyle}"/>
                 </controls:DataGrid.Columns>
                 <controls:DataGrid.RowDetailsTemplate>
                     <DataTemplate>
-                        <Border BorderThickness="0" Padding="0">
-                            <StackPanel Orientation="Vertical" Margin="0,32,0,0">
-                                <StackPanel Orientation="Horizontal" Style="{StaticResource SettingsFlyoutSectionStyle}">
-                                    <TextBlock FontSize="16" Text="Орган, предоставляющий услугу - " Margin="70,0,4,0" VerticalAlignment="Center" TextWrapping="Wrap"/>
-                                    <TextBlock FontSize="16" Text="{Binding ServOGV}" VerticalAlignment="Center" TextWrapping="Wrap" />
-                                </StackPanel>
-                            </StackPanel>
-                        </Border>
+                        <StackPanel>
+                           <TextBlock Style="{StaticResource CellTextStyle}" FontSize="16" FontWeight="SemiBold" Text="Орган, предоставляющий услугу:" HorizontalAlignment="Right" VerticalAlignment="Center" TextWrapping="Wrap"/>
+                           <TextBlock Style="{StaticResource CellTextStyle}" FontSize="16" FontWeight="Normal" Text="{Binding ServOGV}" HorizontalAlignment="Right" VerticalAlignment="Center" TextWrapping="Wrap"/>
+                        </StackPanel>
                     </DataTemplate>
                 </controls:DataGrid.RowDetailsTemplate>
             </controls:DataGrid>
