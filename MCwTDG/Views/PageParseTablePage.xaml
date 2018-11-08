@@ -7,7 +7,7 @@
     Style="{StaticResource PageStyle}"
     mc:Ignorable="d">
     <Grid 
-        x:Name="ContentArea" Tapped="ContentArea_TappedAsync" IsTapEnabled="True" IsDoubleTapEnabled="True" DoubleTapped="ContentArea_DoubleTappedAsync" 
+        x:Name="ContentArea" PointerPressed="ContentArea_PointerPressed"
         Margin="{StaticResource MediumLeftRightMargin}" BorderBrush="Black" Padding="0,0,0,0" Background="{ThemeResource SystemControlPageBackgroundChromeLowBrush}" >
         <Image Source="/Assets/Images/background03.png" Stretch="UniformToFill" />
         <Grid>
