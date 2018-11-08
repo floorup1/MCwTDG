@@ -33,8 +33,36 @@ namespace MCwTDG.Views
 
         private void OnPropertyChanged(string propertyName) => PropertyChanged?.Invoke(this, new PropertyChangedEventArgs(propertyName));
 
+        public bool ConnectionAvailable(string strServer)
+        {
+            try
+            {
+                HttpWebRequest reqFP = (HttpWebRequest)HttpWebRequest.Create(strServer);
+
+                HttpWebResponse rspFP = (HttpWebResponse)reqFP.GetResponse();
+                if (HttpStatusCode.OK == rspFP.StatusCode)
+                {
+                    // HTTP = 200 - Интернет безусловно есть! 
+                    rspFP.Close();
+                    return true;
+                }
+                else
+                {
+                    // сервер вернул отрицательный ответ, инета нет
+                    rspFP.Close();
+                    return false;
+                }
+            }
+            catch (WebException)
+            {
+                // Ошибка, интернета у нас нет.
+                return false;
+            }
+        }
+        
         private async void Parser()
         {
+        if (ConnectionAvailable("http://mfc.ulgov.ru") == true)
             {
                 string html = @"http://mfc.ulgov.ru/index1.php?t=zagrujennost";
                 var htmlDoc = new HtmlDocument();
@@ -56,6 +84,17 @@ namespace MCwTDG.Views
                 TLenTime.Text = htmlDoc.DocumentNode.SelectSingleNode("//div[@class='content rightPart']/div/table/tr[5]/td[3]/div").InnerText.Trim();
                 TZheKol.Text = htmlDoc.DocumentNode.SelectSingleNode("//div[@class='content rightPart']/div/table/tr[6]/td[2]/div").InnerText.Trim();
                 TZheTime.Text = htmlDoc.DocumentNode.SelectSingleNode("//div[@class='content rightPart']/div/table/tr[6]/td[3]/div").InnerText.Trim();
+            }
+        else
+            {
+                TZavKol.Text = "Невозможно получить данные. Отсутствует доступ к сети Интернет.";
+                TZavTime.Text = "Невозможно получить данные. Отсутствует доступ к сети Интернет.";
+                TZasKol.Text = "Невозможно получить данные. Отсутствует доступ к сети Интернет.";
+                TZasTime.Text = "Невозможно получить данные. Отсутствует доступ к сети Интернет.";
+                TLenKol.Text = "Невозможно получить данные. Отсутствует доступ к сети Интернет.";
+                TLenTime.Text = "Невозможно получить данные. Отсутствует доступ к сети Интернет.";
+                TZheKol.Text = "Невозможно получить данные. Отсутствует доступ к сети Интернет.";
+                TZheTime.Text = "Невозможно получить данные. Отсутствует доступ к сети Интернет.";
             }
         }
 
