@@ -33,7 +33,7 @@ namespace MCwTDG.Views
 
         private void OnPropertyChanged(string propertyName) => PropertyChanged?.Invoke(this, new PropertyChangedEventArgs(propertyName));
 
-        public bool ConnectionAvailable(string strServer)
+        public bool ConnectionAvailable(string strServer)   //проверка доступа к узлу
         {
             try
             {
@@ -42,25 +42,25 @@ namespace MCwTDG.Views
                 HttpWebResponse rspFP = (HttpWebResponse)reqFP.GetResponse();
                 if (HttpStatusCode.OK == rspFP.StatusCode)
                 {
-                    // HTTP = 200 - Интернет безусловно есть! 
+                    // Доступ к сайту в сети Интернет имеется 
                     rspFP.Close();
                     return true;
                 }
                 else
                 {
-                    // сервер вернул отрицательный ответ, инета нет
+                    // Сервер вернул отрицательный ответ, доступ к сайту отсутствует
                     rspFP.Close();
                     return false;
                 }
             }
             catch (WebException)
             {
-                // Ошибка, интернета у нас нет.
+                // Ошибка, доступ к сайту отсутствует
                 return false;
             }
         }
         
-        private async void Parser()
+        private async void Parser()     //парсинг таблицы 
         {
         if (ConnectionAvailable("http://mfc.ulgov.ru") == true)
             {
