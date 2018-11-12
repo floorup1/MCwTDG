@@ -102,7 +102,7 @@
   </PropertyGroup>
   <ItemGroup>
     <PackageReference Include="HtmlAgilityPack">
-      <Version>1.8.9</Version>
+      <Version>1.8.10</Version>
     </PackageReference>
     <PackageReference Include="Microsoft.NETCore.UniversalWindowsPlatform">
       <Version>6.1.9</Version>
@@ -247,6 +247,7 @@
   <ItemGroup>
     <None Include=".editorconfig" />
     <None Include="MCwTDG_TemporaryKey.pfx" />
+    <PRIResource Include="Strings\en-us\Resources1.resw" />
   </ItemGroup>
   <ItemGroup>
     <ApplicationDefinition Include="App.xaml">
