@@ -49,6 +49,14 @@
         <Setter Property="TextAlignment" Value="Center" />
     </Style>
 
+    <Style x:Key="ParseTableHeaderTextStyle" TargetType="TextBlock">
+        <Setter Property="HorizontalAlignment" Value="Center"/>
+        <Setter Property="VerticalAlignment" Value="Center"/>
+        <Setter Property="TextWrapping" Value="Wrap"/>
+        <Setter Property="FontSize" Value="30"/>
+        <Setter Property="FontWeight" Value="Bold"/>
+    </Style>
+
     <!--TODO - Разделить стиль cellgridstyle на несколько для регулировки толщины границ ячеек-->
     <Style x:Key="CellGridStyle" TargetType="Border">
         <Setter Property="BorderBrush" Value="{StaticResource SystemControlBackgroundChromeBlackHighBrush}"/>

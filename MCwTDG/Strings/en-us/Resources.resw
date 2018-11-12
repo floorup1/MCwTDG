@@ -153,4 +153,16 @@
     <value>Порядок обжалования</value>
     <comment>Заголовок для blankpage4</comment>
   </data>
+  <data name="ActHeader.Text" xml:space="preserve">
+    <value>Актуальность (дата, время)</value>
+    <comment>Статическое значение в парс-таблице</comment>
+  </data>
+  <data name="KolHeader.Text" xml:space="preserve">
+    <value>Количество посетителей, ожидающих приема на государственную регистрацию права собственности</value>
+    <comment>Статическое значение в парс-таблице</comment>
+  </data>
+  <data name="RaionHeader.Text" xml:space="preserve">
+    <value>Наименование района</value>
+    <comment>Статическое значение в парс-таблице</comment>
+  </data>
 </root>
