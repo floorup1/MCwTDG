@@ -3,11 +3,12 @@
     xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
     xmlns:local="using:MCwTDG.Styles">
 
-    <!--TODO - Разделить стиль cellgridstyle на несколько для регулировки толщины границ ячеек-->
+    
     <Style x:Key="CellGridStyle" TargetType="Border">
-        <Setter Property="BorderBrush" Value="{StaticResource SystemControlBackgroundChromeMediumLowBrush}"/>
+        <Setter Property="BorderBrush" Value="{StaticResource SystemControlChromeMediumLowAcrylicWindowMediumBrush}"/>
         <Setter Property="UseLayoutRounding" Value="True"/>
         <Setter Property="BorderThickness" Value="1 1 1 1"/>
+        <Setter Property="CornerRadius" Value="17"/>
     </Style>
 
 </ResourceDictionary>

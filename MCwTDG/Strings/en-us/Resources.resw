@@ -165,4 +165,20 @@
     <value>Наименование района</value>
     <comment>Статическое значение в парс-таблице</comment>
   </data>
+  <data name="LenName.Text" xml:space="preserve">
+    <value>Ленинский</value>
+    <comment>Статическое значение в парс-таблице</comment>
+  </data>
+  <data name="ZasName.Text" xml:space="preserve">
+    <value>Засвияжский</value>
+    <comment>Статическое значение в парс-таблице</comment>
+  </data>
+  <data name="ZavName.Text" xml:space="preserve">
+    <value>Заволжский</value>
+    <comment>Статическое значение в парс-таблице</comment>
+  </data>
+  <data name="ZheName.Text" xml:space="preserve">
+    <value>Железнодорожный</value>
+    <comment>Статическое значение в парс-таблице</comment>
+  </data>
 </root>

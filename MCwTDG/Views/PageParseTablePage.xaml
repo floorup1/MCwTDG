@@ -33,42 +33,41 @@
                 <TextBlock x:Uid="ActHeader" Style="{StaticResource ParseTableHeaderTextStyle}"/>
             </Border>
             <Border Style="{StaticResource CellGridStyle}" Grid.Column="0" Grid.Row="1">
-                <TextBlock Text="Заволжский" FontSize="32" FontWeight="Bold" HorizontalTextAlignment="Center" VerticalAlignment="Center" TextWrapping="Wrap" />
+                <TextBlock x:Uid="ZavName" Style="{StaticResource ParseTableContentTextStyle}"/>
             </Border>
             <Border Style="{StaticResource CellGridStyle}" Grid.Column="0" Grid.Row="2">
-                <TextBlock Text="Засвияжский" FontSize="32" FontWeight="Bold" HorizontalTextAlignment="Center" VerticalAlignment="Center" TextWrapping="Wrap" />
+                <TextBlock x:Uid="ZasName" Style="{StaticResource ParseTableContentTextStyle}"/>
             </Border>
             <Border Style="{StaticResource CellGridStyle}" Grid.Column="0" Grid.Row="3">
-                <TextBlock Text="Ленинский" FontSize="32" FontWeight="Bold" HorizontalTextAlignment="Center" VerticalAlignment="Center" TextWrapping="Wrap" />
+                <TextBlock x:Uid="LenName" Style="{StaticResource ParseTableContentTextStyle}"/>
             </Border>
             <Border Style="{StaticResource CellGridStyle}" Grid.Column="0" Grid.Row="4">
-                <TextBlock Text="Железнодорожный" FontSize="32" FontWeight="Bold" HorizontalTextAlignment="Center" VerticalAlignment="Center" TextWrapping="Wrap" />
+                <TextBlock x:Uid="ZheName" Style="{StaticResource ParseTableContentTextStyle}"/>
             </Border>
             <Border Style="{StaticResource CellGridStyle}" Grid.Column="1" Grid.Row="1">
-                <TextBlock x:Name="TZavKol" FontSize="32" FontWeight="Bold" HorizontalTextAlignment="Center" VerticalAlignment="Center" TextWrapping="Wrap" />
+                <TextBlock x:Name="TZavKol" Style="{StaticResource ParseTableContentTextStyle}"/>
             </Border>
             <Border Style="{StaticResource CellGridStyle}" Grid.Column="2" Grid.Row="1">
-                <TextBlock x:Name="TZavTime" FontSize="32" FontWeight="Bold" HorizontalTextAlignment="Center" VerticalAlignment="Center" TextWrapping="Wrap" />
+                <TextBlock x:Name="TZavTime" Style="{StaticResource ParseTableContentTextStyle}"/>
             </Border>
             <Border Style="{StaticResource CellGridStyle}" Grid.Column="1" Grid.Row="2">
-                <TextBlock x:Name="TZasKol" FontSize="32" FontWeight="Bold" HorizontalTextAlignment="Center" VerticalAlignment="Center" TextWrapping="Wrap" />
+                <TextBlock x:Name="TZasKol" Style="{StaticResource ParseTableContentTextStyle}"/>
             </Border>
             <Border Style="{StaticResource CellGridStyle}" Grid.Column="2" Grid.Row="2">
-                <TextBlock x:Name="TZasTime" FontSize="32" FontWeight="Bold" HorizontalTextAlignment="Center" VerticalAlignment="Center" TextWrapping="Wrap" />
+                <TextBlock x:Name="TZasTime" Style="{StaticResource ParseTableContentTextStyle}"/>
             </Border>
             <Border Style="{StaticResource CellGridStyle}" Grid.Column="1" Grid.Row="3">
-                <TextBlock x:Name="TLenKol" FontSize="32" FontWeight="Bold" HorizontalTextAlignment="Center" VerticalAlignment="Center" TextWrapping="Wrap" />
+                <TextBlock x:Name="TLenKol" Style="{StaticResource ParseTableContentTextStyle}"/>
             </Border>
             <Border Style="{StaticResource CellGridStyle}" Grid.Column="2" Grid.Row="3">
-                <TextBlock x:Name="TLenTime" FontSize="32" FontWeight="Bold" HorizontalTextAlignment="Center" VerticalAlignment="Center" TextWrapping="Wrap" />
+                <TextBlock x:Name="TLenTime" Style="{StaticResource ParseTableContentTextStyle}"/>
             </Border>
             <Border Style="{StaticResource CellGridStyle}" Grid.Column="1" Grid.Row="4">
-                <TextBlock x:Name="TZheKol" FontSize="32" FontWeight="Bold" HorizontalTextAlignment="Center" VerticalAlignment="Center" TextWrapping="Wrap" />
+                <TextBlock x:Name="TZheKol" Style="{StaticResource ParseTableContentTextStyle}"/>
             </Border>
             <Border Style="{StaticResource CellGridStyle}" Grid.Column="2" Grid.Row="4">
-                <TextBlock x:Name="TZheTime" FontSize="32" FontWeight="Bold" HorizontalTextAlignment="Center" VerticalAlignment="Center" TextWrapping="Wrap" />
+                <TextBlock x:Name="TZheTime" Style="{StaticResource ParseTableContentTextStyle}"/>
             </Border>
-
         </Grid>
     </Grid>
 </Page>
