@@ -1,12 +1,8 @@
-﻿using System;
-using System.ComponentModel;
+﻿using System.ComponentModel;
 using System.Runtime.CompilerServices;
-
 using Windows.UI.Xaml.Controls;
-using System.Text;
 using System.Net;
 using HtmlAgilityPack;
-using Windows.UI.Xaml.Navigation;
 
 namespace MCwTDG.Views
 {
@@ -26,75 +22,37 @@ namespace MCwTDG.Views
             {
                 return;
             }
-
             storage = value;
             OnPropertyChanged(propertyName);
         }
 
         private void OnPropertyChanged(string propertyName) => PropertyChanged?.Invoke(this, new PropertyChangedEventArgs(propertyName));
 
-        public bool ConnectionAvailable(string strServer)   //проверка доступа к узлу
+        public async void Parser()     //парсинг таблицы 
         {
-            try
+            ParseClass PC = new ParseClass();
+            if (PC.ConnectionAvailable("http://mfc.ulgov.ru") == true)
             {
-                HttpWebRequest reqFP = (HttpWebRequest)HttpWebRequest.Create(strServer);
-
-                HttpWebResponse rspFP = (HttpWebResponse)reqFP.GetResponse();
-                if (HttpStatusCode.OK == rspFP.StatusCode)
-                {
-                    // Доступ к сайту в сети Интернет имеется 
-                    rspFP.Close();
-                    return true;
-                }
-                else
-                {
-                    // Сервер вернул отрицательный ответ, доступ к сайту отсутствует
-                    rspFP.Close();
-                    return false;
-                }
+                HtmlDocument HD = await PC.TableParser(@"http://mfc.ulgov.ru/index1.php?t=zagrujennost");
+                TZavKol.Text = PC.TextParser(HD,"//div[@class='content rightPart']/div/table/tr[3]/td[2]/div"); 
+                TZavTime.Text = PC.TextParser(HD,"//div[@class='content rightPart']/div/table/tr[3]/td[3]/div");
+                TZasKol.Text = PC.TextParser(HD,"//div[@class='content rightPart']/div/table/tr[4]/td[2]/div");
+                TZasTime.Text = PC.TextParser(HD,"//div[@class='content rightPart']/div/table/tr[4]/td[3]/div");
+                TLenKol.Text = PC.TextParser(HD,"//div[@class='content rightPart']/div/table/tr[5]/td[2]/div");
+                TLenTime.Text = PC.TextParser(HD,"//div[@class='content rightPart']/div/table/tr[5]/td[3]/div");
+                TZheKol.Text = PC.TextParser(HD,"//div[@class='content rightPart']/div/table/tr[6]/td[2]/div");
+                TZheTime.Text = PC.TextParser(HD,"//div[@class='content rightPart']/div/table/tr[6]/td[3]/div");
             }
-            catch (WebException)
+            else
             {
-                // Ошибка, доступ к сайту отсутствует
-                return false;
-            }
-        }
-        
-        private async void Parser()     //парсинг таблицы 
-        {
-        if (ConnectionAvailable("http://mfc.ulgov.ru") == true)
-            {
-                string html = @"http://mfc.ulgov.ru/index1.php?t=zagrujennost";
-                var htmlDoc = new HtmlDocument();
-                htmlDoc.OptionReadEncoding = false;
-                var request = (HttpWebRequest)WebRequest.Create(html);
-                request.Method = "GET";
-                using (var response = (HttpWebResponse)await request.GetResponseAsync())
-                {
-                    using (var stream = response.GetResponseStream())
-                    {
-                        htmlDoc.Load(stream, Encoding.UTF8);
-                    }
-                }
-                TZavKol.Text = htmlDoc.DocumentNode.SelectSingleNode("//div[@class='content rightPart']/div/table/tr[3]/td[2]/div").InnerText.Trim();
-                TZavTime.Text = htmlDoc.DocumentNode.SelectSingleNode("//div[@class='content rightPart']/div/table/tr[3]/td[3]/div").InnerText.Trim();
-                TZasKol.Text = htmlDoc.DocumentNode.SelectSingleNode("//div[@class='content rightPart']/div/table/tr[4]/td[2]/div").InnerText.Trim();
-                TZasTime.Text = htmlDoc.DocumentNode.SelectSingleNode("//div[@class='content rightPart']/div/table/tr[4]/td[3]/div").InnerText.Trim();
-                TLenKol.Text = htmlDoc.DocumentNode.SelectSingleNode("//div[@class='content rightPart']/div/table/tr[5]/td[2]/div").InnerText.Trim();
-                TLenTime.Text = htmlDoc.DocumentNode.SelectSingleNode("//div[@class='content rightPart']/div/table/tr[5]/td[3]/div").InnerText.Trim();
-                TZheKol.Text = htmlDoc.DocumentNode.SelectSingleNode("//div[@class='content rightPart']/div/table/tr[6]/td[2]/div").InnerText.Trim();
-                TZheTime.Text = htmlDoc.DocumentNode.SelectSingleNode("//div[@class='content rightPart']/div/table/tr[6]/td[3]/div").InnerText.Trim();
-            }
-        else
-            {
-                TZavKol.Text = "Невозможно получить данные. Отсутствует доступ к сети Интернет.";
-                TZavTime.Text = "Невозможно получить данные. Отсутствует доступ к сети Интернет.";
-                TZasKol.Text = "Невозможно получить данные. Отсутствует доступ к сети Интернет.";
-                TZasTime.Text = "Невозможно получить данные. Отсутствует доступ к сети Интернет.";
-                TLenKol.Text = "Невозможно получить данные. Отсутствует доступ к сети Интернет.";
-                TLenTime.Text = "Невозможно получить данные. Отсутствует доступ к сети Интернет.";
-                TZheKol.Text = "Невозможно получить данные. Отсутствует доступ к сети Интернет.";
-                TZheTime.Text = "Невозможно получить данные. Отсутствует доступ к сети Интернет.";
+                TZavKol.Text = PC.ErrorMessage;
+                TZavTime.Text = PC.ErrorMessage;
+                TZasKol.Text = PC.ErrorMessage;
+                TZasTime.Text = PC.ErrorMessage;
+                TLenKol.Text = PC.ErrorMessage;
+                TLenTime.Text = PC.ErrorMessage;
+                TZheKol.Text = PC.ErrorMessage;
+                TZheTime.Text = PC.ErrorMessage;
             }
         }
 
@@ -103,5 +61,5 @@ namespace MCwTDG.Views
             Parser();
         }
 
-        }
     }
+}

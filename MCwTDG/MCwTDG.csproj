@@ -129,6 +129,7 @@
     <Compile Include="Models\Information.cs" />
     <Compile Include="Models\SampleOrder.cs" />
     <Compile Include="Models\ServOrder.cs" />
+    <Compile Include="Classes\ParseClass.cs" />
     <Compile Include="Services\ActivationService.cs" />
     <Compile Include="Activation\DefaultLaunchActivationHandler.cs" />
     <Compile Include="Services\InfoService.cs" />
