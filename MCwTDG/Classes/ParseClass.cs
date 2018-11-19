@@ -54,12 +54,18 @@ namespace MCwTDG
             return htmlDoc;
         }
 
-
-
         public string TextParser(HtmlDocument htmlDocument, string str)
         {
             return htmlDocument.DocumentNode.SelectSingleNode(str).InnerText.Trim();
         }
 
+        public string TextParser(HtmlDocument htmlDocument, int i, int j)
+        {
+            string istr, jstr, str;
+            istr = i.ToString();
+            jstr = j.ToString();
+            str = "//div[@class='content rightPart']/div/table/tr["+istr+"]/td["+jstr+"]/div";
+            return htmlDocument.DocumentNode.SelectSingleNode(str).InnerText.Trim();
+        }
     }
 }
