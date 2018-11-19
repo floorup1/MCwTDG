@@ -8,7 +8,7 @@
         <Setter Property="BorderBrush" Value="{StaticResource SystemControlChromeMediumLowAcrylicWindowMediumBrush}"/>
         <Setter Property="UseLayoutRounding" Value="True"/>
         <Setter Property="BorderThickness" Value="1 1 1 1"/>
-        <Setter Property="CornerRadius" Value="17"/>
+        <Setter Property="CornerRadius" Value="9"/>
     </Style>
 
 </ResourceDictionary>

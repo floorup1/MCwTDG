@@ -1,7 +1,6 @@
 ﻿using System.ComponentModel;
 using System.Runtime.CompilerServices;
 using Windows.UI.Xaml.Controls;
-using System.Net;
 using HtmlAgilityPack;
 
 namespace MCwTDG.Views
