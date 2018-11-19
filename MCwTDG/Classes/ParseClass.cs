@@ -38,7 +38,7 @@ namespace MCwTDG
 
         public string ErrorMessage = "Невозможно получить данные. Отсутствует доступ к сети Интернет.";
 
-        public async Task<HtmlDocument> TableParser(string html)
+        public async Task<HtmlDocument> TableParserAsync(string html)
         {
             var htmlDoc = new HtmlDocument();
             htmlDoc.OptionReadEncoding = false;
@@ -53,6 +53,8 @@ namespace MCwTDG
             }
             return htmlDoc;
         }
+
+
 
         public string TextParser(HtmlDocument htmlDocument, string str)
         {

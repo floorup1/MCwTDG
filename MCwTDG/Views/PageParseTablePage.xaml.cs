@@ -33,7 +33,7 @@ namespace MCwTDG.Views
             ParseClass PC = new ParseClass();
             if (PC.ConnectionAvailable("http://mfc.ulgov.ru") == true)
             {
-                HtmlDocument HD = await PC.TableParser(@"http://mfc.ulgov.ru/index1.php?t=zagrujennost");
+                HtmlDocument HD = await PC.TableParserAsync(@"http://mfc.ulgov.ru/index1.php?t=zagrujennost");
                 TZavKol.Text = PC.TextParser(HD,"//div[@class='content rightPart']/div/table/tr[3]/td[2]/div"); 
                 TZavTime.Text = PC.TextParser(HD,"//div[@class='content rightPart']/div/table/tr[3]/td[3]/div");
                 TZasKol.Text = PC.TextParser(HD,"//div[@class='content rightPart']/div/table/tr[4]/td[2]/div");
